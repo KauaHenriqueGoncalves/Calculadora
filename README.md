@@ -17,3 +17,6 @@ A calculadora possui um layout simples e fácil de usar, com botões para inseri
 ## Como usar
 - Utilize os botões numéricos e de operações para inserir sua expressão matemática.
 - Clique no botão "=" para ver o resultado.
+
+## Agradecimentos
+Este projeto foi criado como um exercício de aprendizado.
