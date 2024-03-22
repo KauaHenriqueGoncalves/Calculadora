@@ -15,6 +15,5 @@ Esta é uma simples calculadora desenvolvida utilizando HTML, CSS e JavaScript. 
 A calculadora possui um layout simples e fácil de usar, com botões para inserir números e operações.
 
 ## Como usar
-- Baixe oAbra o arquivo index.html no seu navegado.
 - Utilize os botões numéricos e de operações para inserir sua expressão matemática.
 - Clique no botão "=" para ver o resultado.
