@@ -40,7 +40,9 @@ button {
 }
 
 .painel {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     max-width: 23rem;
     height: 3.2rem;
     margin-bottom: 1rem;
@@ -49,9 +51,10 @@ button {
     white-space: nowrap;
 }
 .painel::before {
-    content: " ";
+    content: "";
     position: absolute;
-    left: .85rem;
+    top: 1.8rem;
+    right: .9rem;
     display: block;
     width: .2rem;
     height: 2.5rem;
