@@ -1,7 +1,19 @@
 function Calculator() {
     this.display = document.getElementById('output');
 
+    this.clearDisplay = () => this.display.innerText = '';
+
     this.parenthesesIsValid = false;
+
+    this.insertParentheses = () => {
+        if (this.parenthesesIsValid) {
+            this.display.innerText += ')';
+            this.parenthesesIsValid = false;
+        } else {
+            this.display.innerText += '(';
+            this.parenthesesIsValid = true;
+        }
+    }
 
     this.result = () => {
         try {
@@ -16,18 +28,13 @@ function Calculator() {
     this.actions = function(act) {
         const action = {
             'C': function() {
-                this.display.innerText = '';
+                this.clearDisplay();
             }.bind(this),
 
             '()': function() {
-                if (this.parenthesesIsValid) {
-                    this.display.innerText += ')';
-                    this.parenthesesIsValid = false;
-                } else {
-                    this.display.innerText += '(';
-                    this.parenthesesIsValid = true;
-                }
+                this.insertParentheses();
             }.bind(this),
+            
             '=': function() {
                 this.result();
             }.bind(this)
